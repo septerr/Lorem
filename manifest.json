@@ -1,0 +1,10 @@
+{
+    "name": "Lorem Generator",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Generates and copies to clipboard Lorem Ipsum.",
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "lorem.html"
+    }
+}

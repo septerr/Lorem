@@ -1,0 +1,19 @@
+<script>
+    function clipCopy(text) {
+        clipboardholder= document.getElementById("clipboardholder");
+        clipboardholder.style.display = "block";
+        clipboardholder.value = text;
+        clipboardholder.select();
+        document.execCommand("Copy");
+        clipboardholder.style.display = "none";
+    }
+
+    chrome.browserAction.onClicked.addListener(function(tab) {
+        alert('action listener');
+        clipCopy("hello");
+    });
+
+
+</script>
+<textarea id="clipboardholder" style="display:none;"></textarea>
+
